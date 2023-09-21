@@ -1,0 +1,121 @@
+<!--Coreccion parcial juan sebastian castrillon escobar 1002546018-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <script language="JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.2.1/math.js"></script>
+</head>
+</head>
+
+<body>
+    <div class="container text-center">
+        <!--Primer punto-->
+        <h1>transformar cadena de texto</h1>
+        <div class="row justify-content-center">
+            <label class="col-3 col-form-label" for="cadena">Ingrese su cadena de texto</label>
+            <div class="col-8 col-md-4">
+                <input type="text" minlength="3" maxlength="10" class="form-control" id="cadena"  placeholder="Ingrese su cadena de texto" onblur="puntoUno()" >
+            </div> 
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-8 col-md-6">
+            <button type="button" class="btn btn-primary col-12" id="boton1" disabled onclick="mayuscula()">Convertir cadena</button>
+        </div>
+    
+    </div>
+    <div class="row justify-content-center">
+        <div class="alert alert-warning col-8" id="resultado" role="alert">
+            La respuesta se generara aqui
+          </div>
+    </div>
+    </div>
+
+
+    <div class="container text-center">
+        <!--Segundo punto-->
+        <h1>Edades</h1>
+        <div class="row justify-content-center">
+            <label class="col-3 col-form-label" for="nacimiento">Ingrese su fecha de nacimiento</label>
+            <div class="col-8 col-md-4">
+                <input type="date" min="1900-01-01" max="2023-09-09" class="form-control" id="nacimiento" name="fecha" onblur="puntoDos()" >
+            </div> 
+
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-8 col-md-6">
+            <button type="button" class="btn btn-dark col-12" id="boton2" disabled onclick="edad()">Conocer edad</button>
+        </div>
+    
+    </div>
+    <div class="row justify-content-center">
+        <div class="alert alert-primary col-8" id="resultado2" role="alert">
+            la respuesta se generara aqui
+          </div>
+
+        </div>
+    </div>
+
+
+    <div class="container text-center">
+        <!--tercer punto-->
+        <h1>Funcion</h1>
+        <div class="row justify-content-center">
+            <label class="col-3 col-form-label" for="x">Ingrese el valor de x</label>
+            <div class="col-8 col-md-4">
+                <input type="text" class="form-control" id="x" name="valor">
+            </div> 
+
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-8 col-md-6">
+            <button type="button" class="btn btn-info col-12" id="boton3" onclick="puntoTres()">realizar operacion</button>
+        </div>
+    </div>
+    
+    <div id="puntotres_">
+
+
+    </div>
+    </div>
+    <div class="container text-center">
+        <!--cuarto punto-->
+        <h1>Matrices</h1>
+        <div class="row justify-content-center">
+            <label class="col-3 col-form-label" for="filas">Ingrese el numero de filas</label>
+            <div class="col-8 col-md-4">
+                <input type="text" class="form-control" id="filas" placeholder="filas" >
+            </div>
+        </div>
+    
+
+    <div class="row justify-content-center">
+        <label class="col-3 col-form-label" for="columnas">Ingrese el numero de columnas</label>
+            <div class="col-8 col-md-4">
+                <input type="text" class="form-control" id="columnas" placeholder="columnas" onblur="filas_columnas()" >
+            </div> 
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-8 col-md-6">
+            <button type="button" class="btn btn-success col-12" id="boton4" disabled onclick="puntoCuatro()">realizar matriz</button>
+        </div>
+    </div>
+
+    <div id="puntocuatro">
+
+
+
+
+    </div>
+
+
+
+
+</body>
+</html>
+
+
